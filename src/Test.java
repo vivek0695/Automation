@@ -1,4 +1,6 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test {
@@ -9,14 +11,14 @@ public class Test {
 		// Initialize browser
 		WebDriver driver=new ChromeDriver();
 
-		// Open facebook
-		driver.get("https://171-test.nopaperforms.in/btech");
+		// Open Landing page
+		driver.get("https://158-test.nopaperforms.in");
 
 		// Maximize browser
 
 		driver.manage().window().maximize();
 		
-		//driver.findElement(By.id());
+		 driver.findElement(By.id("Name")).sendKeys("viek");
 		
 
 	}
